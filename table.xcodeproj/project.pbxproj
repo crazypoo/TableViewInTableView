@@ -21,6 +21,9 @@
 		CC8478FF17812613005E72C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8478E117812612005E72C1 /* UIKit.framework */; };
 		CC84790717812613005E72C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC84790517812613005E72C1 /* InfoPlist.strings */; };
 		CC84790917812613005E72C1 /* tableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC84790817812613005E72C1 /* tableTests.m */; };
+		CCB1E01A1781643600395870 /* FirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB1E0191781643600395870 /* FirstCell.m */; };
+		CCB1E01D178165F400395870 /* SecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB1E01C178165F400395870 /* SecondCell.m */; };
+		CCB1E01F178184EA00395870 /* fs_common_down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB1E01E178184EA00395870 /* fs_common_down_arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		CC84790417812613005E72C1 /* tableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tableTests-Info.plist"; sourceTree = "<group>"; };
 		CC84790617812613005E72C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC84790817812613005E72C1 /* tableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableTests.m; sourceTree = "<group>"; };
+		CCB1E0181781643600395870 /* FirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCell.h; sourceTree = "<group>"; };
+		CCB1E0191781643600395870 /* FirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCell.m; sourceTree = "<group>"; };
+		CCB1E01B178165F400395870 /* SecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCell.h; sourceTree = "<group>"; };
+		CCB1E01C178165F400395870 /* SecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCell.m; sourceTree = "<group>"; };
+		CCB1E01E178184EA00395870 /* fs_common_down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fs_common_down_arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,11 @@
 		CC8478E317812612005E72C1 /* table */ = {
 			isa = PBXGroup;
 			children = (
+				CCB1E01E178184EA00395870 /* fs_common_down_arrow.png */,
+				CCB1E0181781643600395870 /* FirstCell.h */,
+				CCB1E0191781643600395870 /* FirstCell.m */,
+				CCB1E01B178165F400395870 /* SecondCell.h */,
+				CCB1E01C178165F400395870 /* SecondCell.m */,
 				CC8478EC17812612005E72C1 /* AppDelegate.h */,
 				CC8478ED17812612005E72C1 /* AppDelegate.m */,
 				CC8478EF17812612005E72C1 /* Main.storyboard */,
@@ -229,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8478F617812613005E72C1 /* Images.xcassets in Resources */,
+				CCB1E01F178184EA00395870 /* fs_common_down_arrow.png in Resources */,
 				CC8478E817812612005E72C1 /* InfoPlist.strings in Resources */,
 				CC8478F117812612005E72C1 /* Main.storyboard in Resources */,
 			);
@@ -251,6 +265,8 @@
 			files = (
 				CC8478F417812613005E72C1 /* ViewController.m in Sources */,
 				CC8478EE17812612005E72C1 /* AppDelegate.m in Sources */,
+				CCB1E01D178165F400395870 /* SecondCell.m in Sources */,
+				CCB1E01A1781643600395870 /* FirstCell.m in Sources */,
 				CC8478EA17812612005E72C1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "table/table-Prefix.pch";
 				INFOPLIST_FILE = "table/table-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,6 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "table/table-Prefix.pch";
 				INFOPLIST_FILE = "table/table-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +472,7 @@
 				CC84790E17812613005E72C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC84790F17812613005E72C1 /* Build configuration list for PBXNativeTarget "tableTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +481,7 @@
 				CC84791117812613005E72C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
